@@ -1,0 +1,295 @@
+// ---------------------------------
+// Visual: CSS > Template Theme
+// ---------------------------------
+
+// 1. #HEADER & FOOTER
+// 2. #TYPOGRAPHY
+// 3. #FORMS
+// 4. #BUTTONS
+// 5. #IMAGES
+
+
+// -----------------------------
+// 1. #Header & Footer
+// -----------------------------
+
+.template-header {
+	border-bottom:1px solid @color-swatch7;
+    @media @tablet {
+        margin: 0;
+    }
+}
+
+.template-header {
+	.flex-vert-center; // Mixin > Flexbox: Vertical Align Center Mixin
+	min-height: 80px;
+	background-color: @color-swatch1;
+	// Tablet: reduce height
+}
+
+.template-footer .widget__social-icons ul li {
+	padding: 0 3px 0 3px;
+}
+
+.template-footer .widget__social-icons .social-link {
+	border: 0;
+}
+
+.template-footer .widget__social-icons ul li a {
+.icon:before {
+    margin: 0px;
+    }
+}
+
+.template-footer .widget__social-icons .social-link {
+	&:before {
+		margin:0;
+	}
+}
+
+
+// Footer
+// ------
+
+.template-footer {
+	min-height: 60px;
+	background-color: @color-swatch4;
+	text-align: center;
+	color: @color__feature-headline--text;
+	// Change heading elements to white
+	h1, h2, h3, h4 {
+		color: @color__feature-headline--text;
+	}
+	// Lighten paragraph & link elements
+	p, a {
+		color: @color__feature-headline--text;
+		padding: 0;
+        text-align: center;
+	}
+	// Reset Twitter feed styles
+	.twitter-feed {
+		padding: 0;
+		background-color: transparent;
+	}
+}
+
+
+
+
+// -----------------------------
+// 2. #Typography
+// -----------------------------
+
+// Colour Swatches
+// ---------------
+
+// @color-swatch1: Background 
+// @color-swatch2: Contrast
+// @color-swatch3: Buttons
+// @color-swatch4: Headings
+// @color-swatch5: Paragraph
+// @color-swatch6: Navigation Links
+// @color-swatch7: Spare
+
+
+// Font Swatches
+// -------------
+
+// font1:  Heading 1
+// font2:  Heading 2
+// font3:  Heading 3
+// font4:  Heading 4
+// font5:  Paragraph
+// font6:  Navigation Link
+// font7:  Buttons
+// font8:  Feature Headline
+// font9:  Feature Strapline
+// font10: Company Name (Logo)
+
+
+// Standard Text Link
+// ------------------
+
+a { color: @link-color; }
+
+
+// Blockquote
+// ----------
+
+blockquote:before {
+	margin-right: 10px;
+	font-size: 32px;
+	color: @color-swatch3;
+}
+
+
+
+
+// -----------------------------
+// 3. #Forms
+// -----------------------------
+
+// Form
+// ----------
+
+.form {
+    background-color: @color-swatch7;
+    border: 4px solid darken(@color-swatch7,4%);
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+// Form Body
+.form-body {
+	margin: 0 30px 20px;
+	@media @mobile {
+		margin: 20px;
+	}
+}
+
+// Form Group
+.form-group { 
+	margin-bottom: 20px;
+	@media @mobile {
+		margin-bottom: 20px;
+	}
+}
+
+// Single field form
+.signup-form__form,
+.blog-search__form {
+	legend {
+		display: none;
+	}
+	label {
+		display: inherit;
+	}
+}
+
+// Contact form
+.contact-form__form {
+	label {
+		display: none;
+	}
+}
+
+
+// Legend
+// ----------
+
+legend,
+.signupform__legend,
+.blogsearch__legend,
+.contactform__legend { 
+	width: 100%;
+	padding: 10px 30px 20px;
+    font-family: @font-swatch3-font-family;
+    font-size: @font-swatch3-font-size;
+    font-weight: @font-swatch3-font-weight;
+    color: @color__h3--text;
+	@media @mobile {
+		padding: 6px 20px;
+        text-align: center;
+	}
+}
+
+label {
+	display: none;
+}
+
+// Select
+// ----------
+
+select {
+    height: 36px;
+    outline: none;
+    border: 1px solid darken(@color-swatch7,10%);
+    border-radius: 0;
+    background-color: @color-swatch1;
+    font-size: 12px;
+    text-indent: 0; 
+    &:hover, &:focus {
+        background-color: @color-swatch1;
+        cursor: pointer;
+	}
+}
+
+
+// Inputs: Text
+// ------------
+
+input {
+	border: 1px solid darken(@color-swatch7,10%);
+    -webkit-appearance: none;
+}
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+textarea,
+.input--single-line {
+	border: 1px solid darken(@color-swatch7,10%);
+    -webkit-appearance: none;
+    min-height: 40px;
+    &:focus {
+    	border: 1px solid darken(@color-swatch7,10%);
+        box-shadow: none;
+        outline: none;
+    }
+}
+
+.contact-form__form legend,
+.signup-form__form label,
+.blog-search__form label,
+.product-listing__legend {
+    border-bottom: 0;
+    text-align: center;
+    font-size: @font-swatch1-font-size;
+    font-weight: @font-swatch1-font-weight;
+}
+
+textarea {
+    min-height: 150px;
+}
+
+
+
+
+// -----------------------------
+// 4. #Buttons
+// -----------------------------
+
+button, .button {
+    padding: 6px 30px;
+    background-color: @color-swatch3;
+    border: 4px solid darken(@color-swatch3,4%);
+    color: @color__button--text;
+}
+
+
+
+
+// -----------------------------
+// 5. #Images
+// -----------------------------
+
+// Image Captions
+// --------------
+
+// Gallery & Slideshow
+.image-title,
+.image-description {
+	color: @color-swatch1;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+	@media @tablet {
+		font-size: bkscale(@font-swatch5-font-size,50%);
+	}
+}
+
+// Image Widget
+.image-widget__caption { margin: 10px 0; }
+.image-widget__image-title,
+.image-widget__image-description {
+	color: @color__p--text;
+	text-shadow: none;
+}

@@ -1,0 +1,51 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<!-- Homepage Gallery -->
+<section class="homepage-gallery">
+    {{widget('gallery', 'gallery1', 
+        {'albumRef':0,
+        'showDescription': true,
+        'showTitle': true,
+        'images':
+        [
+        {'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/1.jpg'), 'title':'Culpa qui',  'description':           'Mollit anim id est laborum'},
+        {'imageHeight':'246', 'imageWidth':'246', 'url':asset('images/gallery/2.jpg'), 'title':'Exercitation ullamco',  'description':           'Dolore eu fugiat nulla pariatur'},
+        ]
+    })|raw}}
+</section>
+<!-- End Homepage Gallery -->
+
+<!-- Container -->
+<div class="container">
+
+    <!-- Page Content -->
+    <section class="template-content">
+
+        <!-- Main Widet Zone -->
+        {{zone('main')|raw}}
+
+    </section>
+    <!-- End Page Content -->
+
+</div>
+<!-- End Container -->
+
+<!-- Footer Feature -->
+<section class="feature">
+    {{widget('feature', 'featurehome', {
+        "header": "profile", 
+        "defaultBgImg": asset('images/feature-bg.jpg'),
+        'positionTopPercentage': '0',
+        'showBtn': true,
+        buttonText: "Lorem Ipsum"
+    })|raw}}
+</section>
+<!-- End Footer Feature -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}

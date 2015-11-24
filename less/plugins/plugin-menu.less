@@ -1,0 +1,113 @@
+// -------------------------------------
+// Vision: CSS > Plugin: Menu
+// -------------------------------------
+
+// Menu Navigation
+.menusections {
+    border-top :1px solid @color-swatch7;
+	border-bottom :1px solid @color-swatch7;
+	text-align: center;
+}
+
+.menusections__item-name {
+    color: @color__p--text;
+}
+
+.menusections-item:after {
+    content: "/";
+    font-size: 15px;
+    vertical-align: middle;
+    color: @color-swatch3;
+    margin-right: 0;
+    padding: 0 20px;
+}
+
+.menusections-item:last-child:after {
+    display: none;
+}
+
+.menusections-item {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 0;
+}
+
+// Menu Content
+.widget__menu {
+	text-align:center;
+}
+
+.menu__section-header {
+    margin: 40px 20px;
+    @media @mobile {
+        margin: 20px;
+    }
+}
+
+.menu__item-subtitle {
+        color: @color__feature-strapline--text;
+	    &:after {
+        border-top: 1px solid @color-swatch7;
+        content: "";
+        display: block;
+        position: relative;
+        margin: 10px auto 10px;
+        min-width: 200px;
+        max-width: 200px;
+        width: 5%;
+        @media @tablet {
+            min-width: 170px;
+            max-width: 200px;
+        }
+    }
+}
+
+.menu__dietary-item {
+	&:before {
+        content: "\f005";
+		font-size: 10px;
+		vertical-align: middle;
+        color: @color-swatch3;
+    }
+}
+
+.menu__section-subtitle {
+    font-size: @font-swatch4-font-size;
+    line-height: @font-swatch4-line-height;
+}
+
+.menu__item-price {
+    margin: 10px 0;
+}
+
+.menu__item-content {
+    margin-top: 0;
+}
+
+// Item Image
+.item-image {
+	background-color: darken(@color-swatch1,5%);
+}
+
+// Menu Subsecion
+.menu-subsection {
+    margin: 40px 0px;
+}
+
+// Featured Section
+.menu-section--featured, .menu-item--featured  {
+    border: 4px solid darken(@color-swatch7,5%);
+    padding: 20px;
+    background-color: @color-swatch7;
+}
+
+.menu-item--featured .menu__item-subtitle:after,
+.menu-section--featured .menu__item-subtitle:after {
+    border-top: 1px solid darken(@color-swatch7,10%);
+}
+
+.menu__menu-item {
+    @media @tablet {
+        width: 100%;
+    }
+}

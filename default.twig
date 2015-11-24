@@ -1,0 +1,35 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+{% include "includes/header.twig" %}
+
+<!-- Default Container -->
+<div class="bk-pt-default">
+
+	<!-- Page Title -->
+	<div class="page-titles">
+		<h1>{{widget('pagetitle', 'title', {})|raw}}</h1>
+	</div>
+	
+	<!-- Container -->
+	<div class="container">
+	
+		<!-- Page Content -->
+		<section class="template-content">
+	
+			<!-- Main Widet Zone -->
+		   	{{zone('main')|raw}}
+	
+		</section>
+		<!-- End Page Content -->
+	
+	</div>
+	<!-- End Container -->
+</div>
+<!-- End Default Container -->
+
+{% include "includes/footer.twig" %}
+
+{% endblock %}
+

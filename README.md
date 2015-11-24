@@ -1,2 +1,4 @@
-# visual
-Basekit V8 Template
+Visual
+=========
+
+BaseKit Standard v2 Template
