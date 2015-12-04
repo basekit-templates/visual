@@ -1,4 +1,4 @@
-Vision
+Visual
 =========
 
-BaseKit Standard v2 Template
+Basekit V8 Template
