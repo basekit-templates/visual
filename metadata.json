@@ -1,5 +1,6 @@
 {
     "name":"visual",
+    "thumbnail":"visual.png",
     "screenshot":"visual-screenshot.jpg",
     "pageTypes":["home"],
     "templateType":"standard",
