@@ -199,7 +199,7 @@
             "color__button--background--hover": "darken(@color__secondary, 10%)",
             "color__button--text": "@font-swatch7-color",
             "color__button--text--hover": "@font-swatch7-color",
-            "color__button--border": "@color-swatch7",
+            "color__button--border": "darken(@color-swatch3,4%)",
             "font__button--font-family" : "@font-swatch7-font-family",
             "font__button--font-size" : "@font-swatch7-font-size",
             "font__button--font-weight" : "@font-swatch7-font-weight",
@@ -210,7 +210,7 @@
             "color__header--background": "transparent"
         },
         "footer": {
-            "color__footer--background": "@color-swatch4"
+            "color__footer--background": "darken(@color-swatch4, 10%)"
         },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",
