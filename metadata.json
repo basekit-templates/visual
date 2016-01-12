@@ -210,7 +210,7 @@
             "color__header--background": "transparent"
         },
         "footer": {
-            "color__footer--background": "darken(@color-swatch4, 10%)"
+            "color__footer--background": "darken(@color-swatch4, 7%)"
         },
         "navigation": {
             "color__navigation--text": "@font-swatch6-color",

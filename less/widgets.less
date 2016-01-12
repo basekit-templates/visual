@@ -322,13 +322,6 @@
 // Homepage Gallery
 // ----------------------
 
-.homepage-gallery .container {
-    padding: 40px 50px;
-    @media @tablet {
-        padding: 20px;
-    }
-}
-
 .homepage-gallery .gallery {
     @media @mobile {
         margin-bottom: 10px;
@@ -523,7 +516,7 @@
 .responsiveslideshow__slide-navigation button,
 .responsiveslideshow__button {
     background-color:transparent;
-    border: 4px solid darken(@color-swatch3,4%);
+    border: 4px solid @color-swatch7;
     color: @color__companyname--text;
     margin-bottom: 10px;
     @media @mobile {
@@ -917,6 +910,9 @@ input.input[type=search],
     } 
     .signupform__form-group:last-child {
         width: 100%;
+        @media @mobile {
+            text-align: center;
+        }
     } 
     .signupform__form-group:first-child {
         width: 100%;
