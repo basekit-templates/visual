@@ -97,7 +97,7 @@
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
             "font-weight": "300",
-            "line-height": "24px",
+            "line-height": "26px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },

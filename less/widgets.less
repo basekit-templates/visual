@@ -990,18 +990,20 @@ input.input[type=search],
     margin: 0px auto;
     width: 100%;
     border-bottom: 1px solid @color__secondary;
-    margin-bottom: 40px;
-    @media @mobile {
+    margin-bottom: 20px;
+    @media @tablet {
         padding: 40px 3%;
     }
     @media @mobile {
         max-width: 100%;
+        padding: 20px 3%;
     }
 }
 
 .page-titles h1 {
     font-size: @font__h1--font-size;
     line-height: @font__h1--line-height;
+    padding-bottom: 0;
     @media @tablet {
         font-size: bkscale(@font__h1--font-size,0.8);
         line-height: bkscale(@font__h1--line-height,0.9);
