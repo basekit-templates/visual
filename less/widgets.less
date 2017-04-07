@@ -35,6 +35,7 @@
 // 16.   #YELP
 // 17.   #CONTENT WIDGET
 // 18.   #HR LINE
+// 19.   #RESPONSIVE COLUMNS
 
 
 
@@ -1057,4 +1058,20 @@ input.input[type=search],
 hr.rule {
     background-color: @color-swatch7;
     height: 1px;
+}
+
+
+
+
+// -----------------------------
+// 19.  #Responsive Columns
+// ----------------------------- 
+
+.responsivecolumns {
+    .blogsearch__form-body,
+    .signupform__form-body {
+        @media @tablet {
+            display: block;
+        }
+    }
 }
