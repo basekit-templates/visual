@@ -1067,11 +1067,31 @@ hr.rule {
 // 19.  #Responsive Columns
 // ----------------------------- 
 
+
+    // All Columns
+    // ------------------------------
+
+
 .responsivecolumns {
-    .blogsearch__form-body,
-    .signupform__form-body {
-        @media @tablet {
-            display: block;
+
+    // 3/4 columns
+    // ------------------------------
+
+
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth,
+    .columns-three-left,
+    .columns-three-right,
+    .columns-three-middle {
+
+        .blogsearch__form-body,
+        .signupform__form-body {
+            @media @tablet {
+                display: block;
+            }
         }
+
     }
 }
