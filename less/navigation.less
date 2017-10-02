@@ -37,11 +37,11 @@
 }
 
 // Selected Nav Item
-.navigation-item.selected > .item-name { 
+.navigation-item.selected > .item-name {
     color: @color__navigation--text--selected;
 }
 
-.extendednavigation li.selected a, 
+.extendednavigation li.selected a,
 .extendednavigation li.selected .text {
     color: @color__navigation--text--selected;
 }
@@ -101,7 +101,7 @@
 	}
 }
 
-.navigation-list--children, 
+.navigation-list--children,
 .default-page .navigation-list--children {
 	background-color: @color-swatch1;
 	border: 1px solid darken(@color-swatch7, 10%);
@@ -132,6 +132,19 @@
 
 // Burger Icon
 // -------------
+
+[data-widget-type="extendednavigation"] .widget-overlay {
+    display: none;
+}
+
+[data-widget-type="extendednavigation"] .open + .widget-overlay {
+
+    @media @tablet {
+        display: block;
+        top: 65px;
+    }
+}
+
 
 button.navigation-toggle {
     @media @tablet {
